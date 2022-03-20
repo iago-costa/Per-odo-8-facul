@@ -3,5 +3,5 @@ Repositório para as disciplinas
 
 
 git add --all;
-git commit -m 'disciplinas.pdf';
+git commit -m '';
 git push origin main;

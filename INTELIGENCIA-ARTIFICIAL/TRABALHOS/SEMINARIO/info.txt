@@ -1,0 +1,19 @@
+
+
+https://arxiv.org/abs/2111.07875
+
+https://arxiv.org/pdf/2111.07875.pdf
+
+Procurar artigo descrevendo uma aplicação prática de IA que seja interessante e faça uma breve apresentação sobre ele.
+Os Pontos principals:
+Apresentar a aplicação e descrever em linhas gerais aquilo que envolve IA na mesma.
+Apresentar as vantagens e possíveis problemas ainda não resolvidos na aplicação.
+
+Utilizar slide
+
+Dupla
+Avaliação: 10 min
+Prazo: 22/03
+
+
+A Comparison of the Program Synthesis Performance of GitHub Copilot and Genetic Programming
