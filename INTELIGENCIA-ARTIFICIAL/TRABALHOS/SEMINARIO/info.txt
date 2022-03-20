@@ -17,3 +17,7 @@ Prazo: 22/03
 
 
 A Comparison of the Program Synthesis Performance of GitHub Copilot and Genetic Programming
+
+https://docs.google.com/presentation/d/1w9ZHvddhfGUNjNuU9OMxEGCXSP8f-Ks7EXi1IZCCias/edit?usp=sharing
+
+
