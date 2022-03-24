@@ -1,0 +1,22 @@
+Última Notícia
+Notícias, Ementa modular e avaliação - 23/03/2022 14:54
+Olá turma,
+
+1) Hoje 23/3 haverá uma aula online, conforme combinado com a turma, as 20:00, passo o linkpelo grupo de "whatsapp".
+
+2) Nossa ementa será:
+
+Banco de dados (ementa tradicional, já prevista na CH da Instituição):
+
+Modelagem de BD: Conceitual e Lógica
+Linguagem SQL
+
+Tópicos avançados:
+Cluster de dados e analise
+Introdução ao GraphQL
+
+3) Nossa avaliação será constituída por:
+Seminário IEEE + Entrega de BD um BD de Nicho. Na próxima aula, sortearemos os temas de acordo com as equipes, a previsão de apresentação é para o mês de maio e junho, respectivamente.
+
+Atenciosamente
+
