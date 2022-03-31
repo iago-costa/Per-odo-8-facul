@@ -5,7 +5,6 @@
  */
 package Buscas;
 
-
 //import java.util.ArrayList;
 //import java.util.List;
 
@@ -22,16 +21,16 @@ public class Gulosa {
 	private VetorOrdenado fronteira;
 	private Cidade objetivo;
 	private boolean achou;
-	//public List<String> caminhoCidades = new ArrayList<>();
+	// public List<String> caminhoCidades = new ArrayList<>();
 
 	public Gulosa(Cidade objetivo) {
 		this.objetivo = objetivo;
 		achou = false;
 	}
 
-	//public List<String> buscar(Cidade atual)
-        public void buscar (Cidade atual){
-        System.out.println("\nAtual:" + atual.getNome());
+	// public List<String> buscar(Cidade atual)
+	public void buscar(Cidade atual) {
+		System.out.println("\nAtual:" + atual.getNome());
 		atual.setVisitado(true);
 
 		if (atual == objetivo) {
@@ -46,20 +45,19 @@ public class Gulosa {
 			}
 			fronteira.mostrar();
 			if (fronteira.getPrimeiro() != null) {
-				//caminhoCidades.add(fronteira.getPrimeiro().getNome());
+				// caminhoCidades.add(fronteira.getPrimeiro().getNome());
 				buscar(fronteira.getPrimeiro());
 			}
 		}
 
-		//return caminhoCidades;
+		// return caminhoCidades;
 	}
-public static void main(String args[]){
-Mapa mapa = new Mapa();
-Gulosa g = new Gulosa(mapa.getCuritiba());
-g.buscar(mapa.getPortoUniao());
-        
+
+	public static void main(String args[]) {
+		Mapa mapa = new Mapa();
+		Gulosa g = new Gulosa(mapa.getCuritiba());
+		g.buscar(mapa.getPortoUniao());
+
+	}
 
 }
-
-}
-
