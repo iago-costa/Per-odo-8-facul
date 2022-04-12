@@ -1,0 +1,6 @@
+TUTORIAL:
+● http://cmosedu.com/cmos1/electric/electric_install.htm
+● Setar Ferramenta (Electric x LTSPICE)
+● http://cmosedu.com/cmos1/ltspice/ltspice_electric.htm
+● Design e Layout
+● http://cmosedu.com/videos/electric/tutorial2/electric_tutorial_2.htm
