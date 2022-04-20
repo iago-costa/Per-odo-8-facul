@@ -28,7 +28,7 @@ public class AEstrela {
 	}
 
 	public void buscar(Cidade atual) {
-            System.out.println("\nAtual:"+ atual.getNome());
+        System.out.println("\nAtual:"+ atual.getNome());
 		atual.setVisitado(true);
 
 		if (atual == objetivo) {

@@ -1,0 +1,442 @@
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Cidade Inicial: Arad
+04/20/2022 01:41:13 PM Cidade Objetivo: Neamt
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 1
+04/20/2022 01:41:13 PM Cidade Atual: Arad
+04/20/2022 01:41:13 PM Cidades Adj: [['Zerind', 75], ['Sibiu', 140], ['Timisoara', 118]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 3
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Zerind
+04/20/2022 01:41:13 PM Distancia: 75
+04/20/2022 01:41:13 PM Custo: 75 = 75
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Sibiu
+04/20/2022 01:41:13 PM Distancia: 140
+04/20/2022 01:41:13 PM Custo: 140 = 140
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Timisoara
+04/20/2022 01:41:13 PM Distancia: 118
+04/20/2022 01:41:13 PM Custo: 118 = 118
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Zerind', 75], ['Sibiu', 140], ['Timisoara', 118]]
+04/20/2022 01:41:13 PM 75
+04/20/2022 01:41:13 PM Custo menor atual: 75
+04/20/2022 01:41:13 PM 140
+04/20/2022 01:41:13 PM Custo menor atual: 75
+04/20/2022 01:41:13 PM 118
+04/20/2022 01:41:13 PM Custo menor atual: 75
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 2
+04/20/2022 01:41:13 PM Cidade Atual: Zerind
+04/20/2022 01:41:13 PM Cidades Adj: [['Arad', 75], ['Oradea', 71]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 2
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Arad
+04/20/2022 01:41:13 PM Distancia: 75
+04/20/2022 01:41:13 PM Custo: 75 = 75
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Oradea
+04/20/2022 01:41:13 PM Distancia: 71
+04/20/2022 01:41:13 PM Custo: 71 = 71
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Arad', 75], ['Oradea', 71]]
+04/20/2022 01:41:13 PM 75
+04/20/2022 01:41:13 PM Removendo da lista: Arad
+04/20/2022 01:41:13 PM Lista de Custo: [['Oradea', 71]]
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 3
+04/20/2022 01:41:13 PM Cidade Atual: Oradea
+04/20/2022 01:41:13 PM Cidades Adj: [['Sibiu', 151], ['Zerind', 71]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 2
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Sibiu
+04/20/2022 01:41:13 PM Distancia: 151
+04/20/2022 01:41:13 PM Custo: 151 = 151
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Zerind
+04/20/2022 01:41:13 PM Distancia: 71
+04/20/2022 01:41:13 PM Custo: 71 = 71
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Sibiu', 151], ['Zerind', 71]]
+04/20/2022 01:41:13 PM 151
+04/20/2022 01:41:13 PM Custo menor atual: 151
+04/20/2022 01:41:13 PM 71
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Removendo da lista: Zerind
+04/20/2022 01:41:13 PM Lista de Custo: [['Sibiu', 151]]
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 4
+04/20/2022 01:41:13 PM Cidade Atual: Sibiu
+04/20/2022 01:41:13 PM Cidades Adj: [['Arad', 140], ['Oradea', 151], ['RimnicuVilcea', 80], ['Fagaras', 99]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 4
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Arad
+04/20/2022 01:41:13 PM Distancia: 140
+04/20/2022 01:41:13 PM Custo: 140 = 140
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Oradea
+04/20/2022 01:41:13 PM Distancia: 151
+04/20/2022 01:41:13 PM Custo: 151 = 151
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: RimnicuVilcea
+04/20/2022 01:41:13 PM Distancia: 80
+04/20/2022 01:41:13 PM Custo: 80 = 80
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Fagaras
+04/20/2022 01:41:13 PM Distancia: 99
+04/20/2022 01:41:13 PM Custo: 99 = 99
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Arad', 140], ['Oradea', 151], ['RimnicuVilcea', 80], ['Fagaras', 99]]
+04/20/2022 01:41:13 PM 140
+04/20/2022 01:41:13 PM Removendo da lista: Arad
+04/20/2022 01:41:13 PM Lista de Custo: [['Oradea', 151], ['RimnicuVilcea', 80], ['Fagaras', 99]]
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Custo menor atual: 80
+04/20/2022 01:41:13 PM 80
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Custo menor atual: 80
+04/20/2022 01:41:13 PM 99
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Custo menor atual: 80
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 5
+04/20/2022 01:41:13 PM Cidade Atual: RimnicuVilcea
+04/20/2022 01:41:13 PM Cidades Adj: [['Sibiu', 80], ['Pitesti', 97], ['Craiova', 146]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 3
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Sibiu
+04/20/2022 01:41:13 PM Distancia: 80
+04/20/2022 01:41:13 PM Custo: 80 = 80
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Pitesti
+04/20/2022 01:41:13 PM Distancia: 97
+04/20/2022 01:41:13 PM Custo: 97 = 97
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Craiova
+04/20/2022 01:41:13 PM Distancia: 146
+04/20/2022 01:41:13 PM Custo: 146 = 146
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Sibiu', 80], ['Pitesti', 97], ['Craiova', 146]]
+04/20/2022 01:41:13 PM 80
+04/20/2022 01:41:13 PM Removendo da lista: Sibiu
+04/20/2022 01:41:13 PM Lista de Custo: [['Pitesti', 97], ['Craiova', 146]]
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 146
+04/20/2022 01:41:13 PM Custo menor atual: 97
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 6
+04/20/2022 01:41:13 PM Cidade Atual: Pitesti
+04/20/2022 01:41:13 PM Cidades Adj: [['RimnicuVilcea', 97], ['Craiova', 138], ['Bucharest', 101]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 3
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: RimnicuVilcea
+04/20/2022 01:41:13 PM Distancia: 97
+04/20/2022 01:41:13 PM Custo: 97 = 97
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Craiova
+04/20/2022 01:41:13 PM Distancia: 138
+04/20/2022 01:41:13 PM Custo: 138 = 138
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Bucharest
+04/20/2022 01:41:13 PM Distancia: 101
+04/20/2022 01:41:13 PM Custo: 101 = 101
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['RimnicuVilcea', 97], ['Craiova', 138], ['Bucharest', 101]]
+04/20/2022 01:41:13 PM 97
+04/20/2022 01:41:13 PM Removendo da lista: RimnicuVilcea
+04/20/2022 01:41:13 PM Lista de Custo: [['Craiova', 138], ['Bucharest', 101]]
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 101
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Custo menor atual: 101
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 7
+04/20/2022 01:41:13 PM Cidade Atual: Bucharest
+04/20/2022 01:41:13 PM Cidades Adj: [['Giurgiu', 90], ['Urziceni', 85], ['Fagaras', 211], ['Pitesti', 101]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 4
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Giurgiu
+04/20/2022 01:41:13 PM Distancia: 90
+04/20/2022 01:41:13 PM Custo: 90 = 90
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Urziceni
+04/20/2022 01:41:13 PM Distancia: 85
+04/20/2022 01:41:13 PM Custo: 85 = 85
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Fagaras
+04/20/2022 01:41:13 PM Distancia: 211
+04/20/2022 01:41:13 PM Custo: 211 = 211
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Pitesti
+04/20/2022 01:41:13 PM Distancia: 101
+04/20/2022 01:41:13 PM Custo: 101 = 101
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Giurgiu', 90], ['Urziceni', 85], ['Fagaras', 211], ['Pitesti', 101]]
+04/20/2022 01:41:13 PM 90
+04/20/2022 01:41:13 PM Custo menor atual: 90
+04/20/2022 01:41:13 PM 85
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Custo menor atual: 85
+04/20/2022 01:41:13 PM 211
+04/20/2022 01:41:13 PM Custo menor atual: 90
+04/20/2022 01:41:13 PM 101
+04/20/2022 01:41:13 PM Custo menor atual: 90
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 8
+04/20/2022 01:41:13 PM Cidade Atual: Giurgiu
+04/20/2022 01:41:13 PM Cidades Adj: [['Bucharest', 90]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 1
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Bucharest
+04/20/2022 01:41:13 PM Distancia: 90
+04/20/2022 01:41:13 PM Custo: 90 = 90
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Bucharest', 90]]
+04/20/2022 01:41:13 PM 90
+04/20/2022 01:41:13 PM Removendo da lista: Bucharest
+04/20/2022 01:41:13 PM Lista de Custo: []
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 9
+04/20/2022 01:41:13 PM Cidade Atual: Bucharest
+04/20/2022 01:41:13 PM Cidades Adj: [['Giurgiu', 90], ['Urziceni', 85], ['Fagaras', 211], ['Pitesti', 101]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 4
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Giurgiu
+04/20/2022 01:41:13 PM Distancia: 90
+04/20/2022 01:41:13 PM Custo: 90 = 90
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Urziceni
+04/20/2022 01:41:13 PM Distancia: 85
+04/20/2022 01:41:13 PM Custo: 85 = 85
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Fagaras
+04/20/2022 01:41:13 PM Distancia: 211
+04/20/2022 01:41:13 PM Custo: 211 = 211
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Pitesti
+04/20/2022 01:41:13 PM Distancia: 101
+04/20/2022 01:41:13 PM Custo: 101 = 101
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Giurgiu', 90], ['Urziceni', 85], ['Fagaras', 211], ['Pitesti', 101]]
+04/20/2022 01:41:13 PM 90
+04/20/2022 01:41:13 PM Removendo da lista: Giurgiu
+04/20/2022 01:41:13 PM Lista de Custo: [['Urziceni', 85], ['Fagaras', 211], ['Pitesti', 101]]
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 211
+04/20/2022 01:41:13 PM Custo menor atual: 85
+04/20/2022 01:41:13 PM 101
+04/20/2022 01:41:13 PM Custo menor atual: 85
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 10
+04/20/2022 01:41:13 PM Cidade Atual: Urziceni
+04/20/2022 01:41:13 PM Cidades Adj: [['Vaslui', 142], ['Hirsova', 98], ['Bucharest', 85]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 3
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Vaslui
+04/20/2022 01:41:13 PM Distancia: 142
+04/20/2022 01:41:13 PM Custo: 142 = 142
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Hirsova
+04/20/2022 01:41:13 PM Distancia: 98
+04/20/2022 01:41:13 PM Custo: 98 = 98
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Bucharest
+04/20/2022 01:41:13 PM Distancia: 85
+04/20/2022 01:41:13 PM Custo: 85 = 85
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Vaslui', 142], ['Hirsova', 98], ['Bucharest', 85]]
+04/20/2022 01:41:13 PM 142
+04/20/2022 01:41:13 PM Custo menor atual: 142
+04/20/2022 01:41:13 PM 98
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Custo menor atual: 98
+04/20/2022 01:41:13 PM 85
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Removendo da lista: Bucharest
+04/20/2022 01:41:13 PM Lista de Custo: [['Vaslui', 142], ['Hirsova', 98]]
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 11
+04/20/2022 01:41:13 PM Cidade Atual: Vaslui
+04/20/2022 01:41:13 PM Cidades Adj: [['Iasi', 92], ['Urziceni', 142]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 2
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Iasi
+04/20/2022 01:41:13 PM Distancia: 92
+04/20/2022 01:41:13 PM Custo: 92 = 92
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Urziceni
+04/20/2022 01:41:13 PM Distancia: 142
+04/20/2022 01:41:13 PM Custo: 142 = 142
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Iasi', 92], ['Urziceni', 142]]
+04/20/2022 01:41:13 PM 92
+04/20/2022 01:41:13 PM Custo menor atual: 92
+04/20/2022 01:41:13 PM 142
+04/20/2022 01:41:13 PM Custo menor atual: 92
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Nós percorridos: 12
+04/20/2022 01:41:13 PM Cidade Atual: Iasi
+04/20/2022 01:41:13 PM Cidades Adj: [['Neamt', 87], ['Vaslui', 92]]
+04/20/2022 01:41:13 PM Numero de Adjacentes: 2
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Neamt
+04/20/2022 01:41:13 PM Distancia: 87
+04/20/2022 01:41:13 PM Custo: 87 = 87
+04/20/2022 01:41:13 PM Visitada: False
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Cidade Adjacente: Vaslui
+04/20/2022 01:41:13 PM Distancia: 92
+04/20/2022 01:41:13 PM Custo: 92 = 92
+04/20/2022 01:41:13 PM Visitada: True
+04/20/2022 01:41:13 PM 
+
+04/20/2022 01:41:13 PM Definindo próxima cidade na rota...
+04/20/2022 01:41:13 PM Lista de Custo: [['Neamt', 87], ['Vaslui', 92]]
+04/20/2022 01:41:13 PM 87
+04/20/2022 01:41:13 PM Custo menor atual: 87
+04/20/2022 01:41:13 PM 92
+04/20/2022 01:41:13 PM Custo menor atual: 87
+04/20/2022 01:41:13 PM ===========================================================
+
+04/20/2022 01:41:13 PM ===========================================================
+04/20/2022 01:41:13 PM Cidade Atual: Neamt
+04/20/2022 01:41:13 PM Cidades Adj: [['Iasi', 87]]
+04/20/2022 01:41:13 PM Tempo de execução Busca Uniforme: 0.033766746520996094 segundos

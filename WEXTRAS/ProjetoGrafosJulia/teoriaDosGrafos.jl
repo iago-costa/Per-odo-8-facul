@@ -16,7 +16,7 @@ function processandoDados()
     listaAdjacencia = []
     listaVertices = []
     tipo = ""
-    open("entrada.txt") do file
+    open("entradatipo2.txt") do file
         line = 0
         while !eof(file)      
             s = readline(file)
@@ -71,11 +71,11 @@ function carregandoMatrizAdjacente(listaAdjacencia, listaVertices, tipo)
 
     println("Matriz adjacentes: ", matrizAdjacencia)
     
-    loopOpcoes(listaVertices, matrizAdjacencia, quantidadeVertices)
+    loopOpcoes(listaVertices, matrizAdjacencia, quantidadeVertices, tipo)
 end
 
 
-function loopOpcoes(listaVertices, matrizAdjacencia, quantidadeVertices)
+function loopOpcoes(listaVertices, matrizAdjacencia, quantidadeVertices, tipo)
     loopOn = true
     while loopOn
         println("\n=====================================================")
@@ -142,7 +142,7 @@ function loopOpcoes(listaVertices, matrizAdjacencia, quantidadeVertices)
 
 
         if cmp(s, "5") == 0
-            println("Plot gráfico - grafo será salvo em grafo.png")
+            println("Plot gráfico - o grafo será salvo em grafo.png")
             g = SimpleGraph(quantidadeVertices)
             for i in listaVertices
                 for j in listaVertices
@@ -151,8 +151,14 @@ function loopOpcoes(listaVertices, matrizAdjacencia, quantidadeVertices)
                     end
                 end
             end
-            nodelabel = 1:nv(g)
-            draw(PNG("grafo.png", 16cm, 16cm), gplot(g, nodelabel=nodelabel))
+            if cmp(tipo, "D") == 0
+                nodelabel = 1:nv(g)
+                draw(PNG("grafo.png", 16cm, 16cm), gplot(g, nodelabel=nodelabel, arrowlengthfrac=0.1))
+            
+            elseif cmp(tipo, "ND") == 0
+                nodelabel = 1:nv(g)
+                draw(PNG("grafo.png", 16cm, 16cm), gplot(g, nodelabel=nodelabel))
+            end
         end
 
 
