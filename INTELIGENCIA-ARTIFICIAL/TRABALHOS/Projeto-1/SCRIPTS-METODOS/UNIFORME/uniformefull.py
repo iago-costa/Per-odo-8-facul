@@ -27,9 +27,10 @@ class Mapa:
             line = line.split("-")
             fileDict[line[0].strip()] = int(line[1])
         file.close()
+        
         self.Arad = Cidade('Arad', [['Zerind', 75], ['Sibiu', 140], ['Timisoara', 118]], fileDict['Arad'])
         self.Bucharest = Cidade('Bucharest', [['Giurgiu', 90], ['Urziceni', 85], ['Fagaras', 211], ['Pitesti', 101]], fileDict['Bucharest'])
-        self.Craiova = Cidade('Craiova', [['Drobeta', 120], ['RimnicuVilcea', 146], ['Pitesti', 138]], fileDict['Craiova'])
+        self.Craiova = Cidade('Craiova', [['Dobreta', 120], ['RimnicuVilcea', 146], ['Pitesti', 138]], fileDict['Craiova'])
         self.Dobreta = Cidade('Dobreta', [['Mehadia', 75], ['Craiova', 120]], fileDict['Dobreta'])
         self.Eforie = Cidade('Eforie', [['Hirsova', 86]], fileDict['Eforie'])
         self.Fagaras = Cidade('Fagaras', [['Sibiu', 99], ['Bucharest', 211]], fileDict['Fagaras'])
@@ -112,6 +113,9 @@ class Aestrela:
         logging.info("Cidade Objetivo: " + self.cidadeObjetivo)
         logging.info("===========================================================\n")
         nosPercorridos = 0
+        custoRaiz = 0
+        lista_custo = []
+        cidadeAnterior = ''
         while cidadeAtual != cidadeObjetivo:
             # print("\nCidade Atual: " + cidadeAtual)
             mapaGrafo.cidades[cidadeAtual].visitada = True
@@ -122,13 +126,13 @@ class Aestrela:
             logging.info("Cidades Adj: " + str(mapaGrafo.cidades[cidadeAtual].verticesAlvo))
             
             numeroAdjacentes = len(mapaGrafo.cidades[cidadeAtual].verticesAlvo)
-            lista_custo = []
             logging.info("Numero de Adjacentes: " + str(numeroAdjacentes))
             logging.info("\n")
             for adjacente in range(numeroAdjacentes):
                 logging.info("Cidade Adjacente: " + str(mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][0]))
                 logging.info("Distancia: " + str(mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][1]))
-                custo = mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][1]
+                
+                custo = mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][1] + custoRaiz
                 logging.info("Custo: " + str(mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][1]) + " = " + str(custo))
                 logging.info("Visitada: " + str(mapaGrafo.cidades[mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][0]].visitada))
                 lista_custo.append([mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][0], custo])
@@ -136,28 +140,30 @@ class Aestrela:
             
             logging.info("Definindo próxima cidade na rota...")
             logging.info("Lista de Custo: " + str(lista_custo))
-            for custo_atual in lista_custo:
-                logging.info(str(custo_atual[1]))
-                for custo_anterior in lista_custo:
-                    if custo_atual[1] >= custo_anterior[1]:
-                        custo_menor = custo_anterior[1]
-                        
-                        if mapaGrafo.cidades[custo_anterior[0]].visitada == False:
-                            logging.info("Custo menor atual: " + str(custo_menor))
+            
+            custo_atual = lista_custo[0]
+            logging.info(str(custo_atual[1]))
+            for custo_anterior in lista_custo:
+                if custo_atual[1] >= custo_anterior[1]:
+                    custo_menor = custo_anterior[1]
+                    
+                    if mapaGrafo.cidades[custo_anterior[0]].visitada == False:
+                        logging.info("Custo menor atual: " + str(custo_menor))
+                        cidadeAtual = custo_anterior[0]
+                        break
+                    else:
+                        logging.info("Removendo da lista: " + str(custo_anterior[0]))
+                        lista_custo.remove(custo_anterior)
+                        logging.info("Lista de Custo: " + str(lista_custo))
+                        if lista_custo != []:
+                            cidadeAtual = lista_custo[0][0]
+                        else :
                             cidadeAtual = custo_anterior[0]
                             break
-                        else:
-                            logging.info("Removendo da lista: " + str(custo_anterior[0]))
-                            lista_custo.remove(custo_anterior)
-                            logging.info("Lista de Custo: " + str(lista_custo))
-                            if lista_custo != []:
-                                cidadeAtual = lista_custo[0][0]
-                            else :
-                                cidadeAtual = custo_anterior[0]
-                                break
 
-                    logging.info("\n")
+                logging.info("\n")
             logging.info("===========================================================\n")
+            custoRaiz += mapaGrafo.cidades[cidadeAtual].verticesAlvo[adjacente][1]
 
         logging.info("===========================================================")
         logging.info("Cidade Atual: " + mapaGrafo.cidades[cidadeAtual].nome)

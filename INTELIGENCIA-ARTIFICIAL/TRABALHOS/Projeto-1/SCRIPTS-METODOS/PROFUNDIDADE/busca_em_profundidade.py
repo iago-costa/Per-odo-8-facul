@@ -1,5 +1,6 @@
+from concurrent.futures import process
 import pdb
-from time import process_time
+from time import process_time, time
 
 cidades = {
 
@@ -58,6 +59,9 @@ nohChegada = 19
 #---------------------------------------------------------------------------------------------------------------------------------------
 
 def busca_em_profundidade(nohPartida, nohChegada):
+
+	start = time()
+
 	pilha = [] # implementando pilha atraves de uma lista, pilha vazia
 	#pdb.set_trace()
 	pilha.append(nohPartida) #equivale ao push, setando o noh de partida na pilha
@@ -71,6 +75,8 @@ def busca_em_profundidade(nohPartida, nohChegada):
 
 			if nohDaVez == nohChegada: # verifico se esse noh é o noh de destino
 				print("Chegou ao destino") # se for imprimo que cheguei ao destino
+				end = time()
+				print(end-start)
 				break                       # e paro meu  lopp
 			else:                           # se não for eu pego todos os vizinhos desse noh e empilho 
 				for noh in grafo[nohDaVez]: # pegando todos os vizinhos desse

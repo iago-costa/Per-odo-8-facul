@@ -1,4 +1,5 @@
 import pdb
+import time
 dicionarioCidades = { #dicionario de cidades (mapa)
     0: 'dobreta',
     1: 'mehadia',
@@ -51,6 +52,8 @@ def desenfileira(fila):
     return no      
                
 def busca(noPartida, noChegada, fila):  #implementado de forma iterativa
+    inicio = time.time()
+    print("O tempo de execução começou a ser calculado")
     #fila = [] 
     fila = enfileira(noPartida, fila) #enfileira cidade de partida
     #fila.append(noPartida)
@@ -61,6 +64,8 @@ def busca(noPartida, noChegada, fila):  #implementado de forma iterativa
         print(dicionarioCidades[no]) #imprime na tela a cidade que foi visitada
         if no == noChegada: #verifica se a cidade visitada é a cidade de destino
             print("Destino alcançado") #imprime o destino encontrado caso o no visitado seja o objetivo
+            fim = time.time()
+            print(fim-inicio)
             break
         for n in grafoCidades[no]: #percorre os vizinhos do nó que foi retirado na fila na linha 58
             if cidadesVisitadas[n] == 0: #verifica se os vizinhos ja foram visitados
@@ -72,5 +77,4 @@ noPartida = 4 #seta cidade de partida
 noChegada = 19 #seta o destino desejado
 cidadesVisitadas = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] #lista de cidades que ja foram visitadas
 fila = [] #fila representada por uma lista
-
 busca(noPartida,noChegada, fila)

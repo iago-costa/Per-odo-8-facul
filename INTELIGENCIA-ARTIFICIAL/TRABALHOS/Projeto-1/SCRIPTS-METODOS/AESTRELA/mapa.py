@@ -15,7 +15,7 @@ class Mapa:
         file.close()
         self.Arad = Cidade('Arad', [['Zerind', 75], ['Sibiu', 140], ['Timisoara', 118]], fileDict['Arad'])
         self.Bucharest = Cidade('Bucharest', [['Giurgiu', 90], ['Urziceni', 85], ['Fagaras', 211], ['Pitesti', 101]], fileDict['Bucharest'])
-        self.Craiova = Cidade('Craiova', [['Drobeta', 120], ['RimnicuVilcea', 146], ['Pitesti', 138]], fileDict['Craiova'])
+        self.Craiova = Cidade('Craiova', [['Dobreta', 120], ['RimnicuVilcea', 146], ['Pitesti', 138]], fileDict['Craiova'])
         self.Dobreta = Cidade('Dobreta', [['Mehadia', 75], ['Craiova', 120]], fileDict['Dobreta'])
         self.Eforie = Cidade('Eforie', [['Hirsova', 86]], fileDict['Eforie'])
         self.Fagaras = Cidade('Fagaras', [['Sibiu', 99], ['Bucharest', 211]], fileDict['Fagaras'])
