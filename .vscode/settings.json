@@ -1,5 +1,7 @@
 {
     "java.project.sourcePaths": [
         "INTELIGENCIA-ARTIFICIAL/TRABALHOS/Projeto-1/SCRIPTS/AESTRELA"
-    ]
+    ],
+    "python.linting.enabled": true,
+    // "python.linting.pylintEnabled": true
 }
