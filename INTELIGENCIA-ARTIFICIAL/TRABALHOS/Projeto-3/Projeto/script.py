@@ -52,3 +52,5 @@ print(saidas)
 # #Solver é o algoritmo utilizado para atualização dos pesos
 # redeNeural.fit(entradas[0], saidas[0]) #Treinamento da RNA
 # redeNeural.predict([[5,7.2,5.1,2.2]]) #fazer a previsão
+
+
