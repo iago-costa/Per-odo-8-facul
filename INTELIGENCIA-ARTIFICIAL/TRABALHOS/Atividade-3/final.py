@@ -17,8 +17,11 @@ for i in range(len(x)):
     entradas.append([x[i]])
     saidas.append([np.sin(x[i])])
 
-entradasReais = entradas
-saidasReais = saidas
+entradasReais = np.array(entradas)
+saidasReais = np.array(saidas)
+
+entradas = np.array(entradas)
+saidas = np.array(saidas)
 
 pesos0 = 2*np.random.random((1,len(entradas))) - 1
 pesos1 = 2*np.random.random((len(entradas),1)) - 1
