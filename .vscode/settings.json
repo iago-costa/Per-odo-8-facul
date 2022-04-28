@@ -3,5 +3,20 @@
         "INTELIGENCIA-ARTIFICIAL/TRABALHOS/Projeto-1/SCRIPTS/AESTRELA"
     ],
     "python.linting.enabled": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "Teste Local",
+            "database": "db_aula",
+            "username": "root",
+            "password": "3321"
+        }
+    ],
     // "python.linting.pylintEnabled": true
 }
