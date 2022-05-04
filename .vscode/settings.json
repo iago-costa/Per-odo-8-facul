@@ -23,12 +23,13 @@
             },
             "previewLimit": 50,
             "server": "localhost",
-            "port": 3307,
+            "port": 3306,
             "driver": "MySQL",
-            "database": "test_db",
+            "database": "Backoffice",
             "name": "Teste docker",
             "username": "root",
-            "password": "root"
+            "password": "RootPassword",
+            "connectionTimeout": 10
         }
     ],
     // "python.linting.pylintEnabled": true
