@@ -1,0 +1,58 @@
+version: '3.3'
+volumes:
+  data: 
+services:
+  db: 
+    image: mysql:5.6
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/server_01:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: RootPassword
+      MYSQL_DATABASE: Backoffice
+      MYSQL_USER: MainUser
+      MYSQL_PASSWORD: MainPassword
+  # app:
+  #   image: phpmyadmin/phpmyadmin:latest
+  #   links:
+  #     - db
+  #   ports:
+  #     - 80:80
+  #   environment:
+  #     - PMA_ARBITRARY=1
+
+# https://johnathanfercher.medium.com/mysql-docker-7ff6d50d6cf1
+# https://share.atelie.software/subindo-um-banco-de-dados-mysql-e-phpmyadmin-com-docker-642be41f7638
+
+
+# https://medium.com/@math21/how-to-backup-your-database-from-a-mysql-docker-container-3fdd5769bad1
+
+  # backend:
+  #   image: ktoreasy:latest
+  #   mem_limit: 300m
+  #   depends_on:
+  #     - db
+  #   environment:
+  #     - ENVIRONMENT=dev
+  #   restart: always
+  #   ports:
+  #     - "3510:3500"
+
+  # dbBackup:
+  #   image: fradelg/mysql-cron-backup
+  #   depends_on:
+  #     - db
+  #   restart: always
+  #   volumes:
+  #     - ./mysql/backup:/backup
+  #   environment:
+  #     - MYSQL_USER=root
+  #     - MYSQL_PASS=mypassword
+  #     - MYSQL_DB=ktoreasydb
+  #     - CRON_TIME=0 0 * * *
+  #     - MYSQL_HOST=db
+  #     - MYSQL_PORT=3306
+  #     - TIMEOUT=10s
+  #     - INIT_BACKUP=1
