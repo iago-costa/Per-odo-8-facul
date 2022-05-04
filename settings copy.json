@@ -16,19 +16,6 @@
             "database": "db_aula",
             "username": "root",
             "password": "3321"
-        },
-        {
-            "mysqlOptions": {
-                "authProtocol": "default"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3307,
-            "driver": "MySQL",
-            "database": "test_db",
-            "name": "Teste docker",
-            "username": "root",
-            "password": "root"
         }
     ],
     // "python.linting.pylintEnabled": true

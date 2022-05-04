@@ -25,7 +25,9 @@ CREATE TABLE Telefone (
 	FOREIGN KEY (CodCli_FK) REFERENCES Cliente(CodCli)
 );
 
-
+INSERT INTO "Aluga" ("DataInicial", "DataFinal", "CodCar", "CodCli") VALUES ("04/05/2022", "06/05/2022", "1", "1")
+INSERT INTO "Aluga" ("DataInicial", "DataFinal", "CodCar", "CodCli") VALUES ("04/05/2022", "06/05/2022", "1", "1")
+INSERT INTO "Aluga" ("DataInicial", "DataFinal", "CodCar", "CodCli") VALUES ("04/05/2022", "06/05/2022", "1", "1")
 
 CREATE TABLE Aluga (
 	CodAlu int AUTO_INCREMENT,
@@ -48,7 +50,6 @@ CREATE TABLE Carro (
 	diaria DOUBLE PRECISION
 	PRIMARY KEY(CodCar)
 );
-
 
 CREATE TABLE Esportivo (
 	Velocidade DOUBLE PRECISION,

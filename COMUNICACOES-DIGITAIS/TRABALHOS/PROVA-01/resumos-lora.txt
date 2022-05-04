@@ -1,0 +1,20 @@
+LoRa
+
+LoRa ( Lo ng Ra nge) é protocolo de comunicação sem fio de longo alcance patenteada pela Cycleo de Grenoble, França, e adquirida pela Semtech em 2012. O LoRa usa bandas de radiofrequência sub giga-hertz não licenciando na Europa e Estados Unidos. O LoRa permite transmissões de longo alcance (mais de 10 km em áreas rurais) com baixo consumo de energia. A tecnologia é apresentada em duas partes: LoRa, a camada física e LoRaWAN (Long Range Wide Area Network), as camadas superiores.
+
+O LoRa é um sistema de modulação proprietário vendido pela empresa Semtech, única fabricante de chipset e titular de licença para LoRa.
+
+Vantagens do LoRa:
+
+    Adequado para aplicações de propósito específico;
+    Funcionalidades para configurar e gerenciar sua própria rede;
+    O LoRa é uma boa opção para aplicações de bidirecionais, por exemplo, funcionalidade de comando e controle, usando links simétricos;
+    Os dispositivos LoRa funcionam bem quando estão em movimento, o que os torna úteis para rastrear ativos em movimento, como remessas de encomendas;
+    Os dispositivos LoRa têm uma duração de bateria mais longa que os dispositivos NB-IoT.
+
+Desvantagens do LoRa:
+
+    Tem taxas de dados mais baixas do que o NB-IoT;
+    Tem um tempo de latência maior que o NB-IoT.
+
+https://efagundes.com/blog/os-desafios-da-coleta-de-dados-em-dispositivos-iot-para-big-data-analytics/
