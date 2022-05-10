@@ -1,0 +1,15 @@
+https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.29-winx64.zip
+
+abre o cmd na pasta /bin e roda isso 
+mysqld --port 1234 --console --initialize
+
+espera a putaria acontecer e abre outro cmd e roda isso 
+mysql --port 1234 -p'<SenhaQueoOutroCmdGerou>' --user root
+
+por fim, muda a senha temporária para uma definitiva
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'admin';
+
+a segunda vez que for rodar o mysqld, tira o --initialize
+mysqld --port 1234 --console
+
+e a proxima vez que for rodar o mysql bota a senha admin, ou a que vc mudou ai
