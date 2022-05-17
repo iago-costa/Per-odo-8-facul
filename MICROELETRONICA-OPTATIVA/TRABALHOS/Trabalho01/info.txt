@@ -1,0 +1,27 @@
+GRUPO 01 - Eng. Computação 2018
+
+Leyrisvan da Costa
+Breno Fernandes
+Kayro Santos
+Athos Lima
+Iago Costa
+Gabriel Machado
+
+Assunto: ?
+
+
+TUTORIAL:
+● http://cmosedu.com/cmos1/electric/electric_install.htm
+● Setar Ferramenta (Electric x LTSPICE)
+● http://cmosedu.com/cmos1/ltspice/ltspice_electric.htm
+● Design e Layout
+● http://cmosedu.com/videos/electric/tutorial2/electric_tutorial_2.htm
+
+
+JAVA 3D
+https://gouessej.wordpress.com/2012/08/01/java-3d-est-de-retour-java-3d-is-back/#download
+
+
+https://pt.differbetween.com/article/difference_between_nmos_and_pmos
+NMOS é construído com fonte e dreno tipo n e um substrato tipo p, enquanto PMOS é construído com fonte e dreno tipo p e um substrato tipo n. Em um NMOS, os portadores são elétrons, enquanto em um PMOS, os portadores são lacunas. Quando uma alta tensão é aplicada ao gate, o NMOS conduzirá, enquanto o PMOS não.
+
