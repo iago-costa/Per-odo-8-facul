@@ -10,6 +10,7 @@ ALTER TABLE `mydb`.`Aluno` CHANGE `matricula` `matricula` INT NOT NULL AUTO_INCR
 SELECT * FROM `mydb`.`Aluno`;
 
 
+
 -- -----------------------------------------------------
 -- Table `mydb`.`Disciplina`
 -- -----------------------------------------------------

@@ -56,3 +56,5 @@ services:
   #     - MYSQL_PORT=3306
   #     - TIMEOUT=10s
   #     - INIT_BACKUP=1
+
+# mysql -uroot -P 3306 -p
