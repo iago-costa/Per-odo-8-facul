@@ -1,4 +1,4 @@
-from random import random
+from random import random, randint
 import matplotlib.pyplot as plt
 
 class Produto():
@@ -97,6 +97,17 @@ class AlgoritmoGenetico():
             i += 1
         return pai
     
+    def seleciona_pai_roleta_viciada(self, soma_avaliacao):
+        lista_de_sorteio = []
+        lista_de_probabilidades = []
+        for individuo in self.populacao:
+            individuo_probabilidade = individuo.nota_avaliacao / soma_avaliacao
+            lista_de_probabilidades.append(individuo_probabilidade)
+        for probabilidade in lista_de_probabilidades:
+            for i in range(int(probabilidade * 100)):
+                lista_de_sorteio.append(lista_de_probabilidades.index(probabilidade))
+        return lista_de_sorteio[randint(0, len(lista_de_sorteio) - 1)]
+    
     def visualiza_geracao(self):
         melhor = self.populacao[0]
         print("G:%s -> Valor: %s Espaço: %s Cromossomo: %s" % (self.populacao[0].geracao,
@@ -118,11 +129,14 @@ class AlgoritmoGenetico():
         
         for geracao in range(numero_geracoes):
             soma_avaliacao = self.soma_avaliacoes()
-            nova_populacao = []
+            nova_populacao = [self.populacao[0]] # mantém melhor indivíduo da geração atual
             
-            for individuos_gerados in range(0, self.tamanho_populacao, 2):
-                pai1 = self.seleciona_pai(soma_avaliacao)
-                pai2 = self.seleciona_pai(soma_avaliacao)
+            for individuos_gerados in range(0, self.tamanho_populacao-1, 2):
+                # pai1 = self.seleciona_pai(soma_avaliacao)
+                # pai2 = self.seleciona_pai(soma_avaliacao)
+                
+                pai1 = self.seleciona_pai_roleta_viciada(soma_avaliacao)
+                pai2 = self.seleciona_pai_roleta_viciada(soma_avaliacao)
                 
                 filhos = self.populacao[pai1].crossover(self.populacao[pai2])
                 
@@ -175,7 +189,7 @@ if __name__ == '__main__':
         espacos.append(produto.espaco)
         valores.append(produto.valor)
         nomes.append(produto.nome)
-    limite = 10
+    limite = 3
     tamanho_populacao = 20
     taxa_mutacao = 0.01
     numero_geracoes = 100
@@ -189,6 +203,10 @@ if __name__ == '__main__':
     
     #for valor in ag.lista_solucoes:
     #    print(valor)
+    valor_total = 0
+    for valor in valores:
+        valor_total += valor
+    print("Valor Máximo Possível: %s" % valor_total)
     plt.plot(ag.lista_solucoes)
-    plt.title("Acompanhamento dos valores")
+    plt.title("Acompanhamento dos valores - Elitismo")
     plt.show() 
