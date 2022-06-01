@@ -58,3 +58,12 @@ services:
   #     - INIT_BACKUP=1
 
 # mysql -uroot -P 3306 -p
+
+# run container
+# docker run -d -p 3306:3306 -v /var/lib/mysql:/var/lib/mysql mysql:5.6
+# run container shell
+# docker run -it -p 3306:3306 -v /var/lib/mysql:/var/lib/mysql mysql:5.6 /bin/bash
+#  docker exec -it 3f61d20dea383ba1fefbfcc1aa7eccfcad5600cf070f857e401cca5da7beee42 bash < 
+
+# docker container ls -a
+# docker container ls
