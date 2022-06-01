@@ -86,17 +86,6 @@ class AlgoritmoGenetico():
            soma += individuo.nota_avaliacao
         return soma
     
-    def seleciona_pai(self, soma_avaliacao):
-        pai = -1
-        valor_sorteado = random() * soma_avaliacao
-        soma = 0
-        i = 0
-        while i < len(self.populacao) and soma < valor_sorteado:
-            soma += self.populacao[i].nota_avaliacao
-            pai += 1
-            i += 1
-        return pai
-    
     def seleciona_pai_roleta_viciada(self, soma_avaliacao):
         lista_de_sorteio = []
         lista_de_probabilidades = []
@@ -132,9 +121,6 @@ class AlgoritmoGenetico():
             nova_populacao = [self.populacao[0]] # mantém melhor indivíduo da geração atual
             
             for individuos_gerados in range(0, self.tamanho_populacao-1, 2):
-                # pai1 = self.seleciona_pai(soma_avaliacao)
-                # pai2 = self.seleciona_pai(soma_avaliacao)
-                
                 pai1 = self.seleciona_pai_roleta_viciada(soma_avaliacao)
                 pai2 = self.seleciona_pai_roleta_viciada(soma_avaliacao)
                 
@@ -208,5 +194,5 @@ if __name__ == '__main__':
         valor_total += valor
     print("Valor Máximo Possível: %s" % valor_total)
     plt.plot(ag.lista_solucoes)
-    plt.title("Acompanhamento dos valores - Elitismo")
+    plt.title("Valor X Geração - Roleta Viciada (com elitismo)")
     plt.show() 
