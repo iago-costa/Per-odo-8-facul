@@ -22,7 +22,7 @@ class Individuo():
                 self.cromossomo.append("0")
             else:
                 self.cromossomo.append("1")
-                
+             
     def avaliacao(self):
         nota = 0
         soma_espacos = 0

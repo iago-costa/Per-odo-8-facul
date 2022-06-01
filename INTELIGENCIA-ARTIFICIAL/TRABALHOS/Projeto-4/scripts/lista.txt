@@ -13,3 +13,9 @@ TV 50,0.290,3999.90
 TV 42,0.200,2999.90
 Microondas LG,0.0544,429.90
 Notebook Lenovo,0.498,1999.90
+
+
+https://www.joaoataide.com/post/otimiza%C3%A7%C3%A3o-de-cargas-com-algoritmo-gen%C3%A9tico
+https://iaexpert.academy/courses/algoritmos-geneticos-python/
+usuario: brunoguerra
+senha: bixopiruleta
