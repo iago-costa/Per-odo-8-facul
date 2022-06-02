@@ -35,14 +35,14 @@ class Individuo():
         self.nota_avaliacao = nota
         self.espaco_usado = soma_espacos
         
-    def crossover(self, outro_individuo):
+    def crossover(self, outro_individuo, geracao_atual=0):
         corte = round(random()  * len(self.cromossomo))
         
         filho1 = outro_individuo.cromossomo[0:corte] + self.cromossomo[corte::]
         filho2 = self.cromossomo[0:corte] + outro_individuo.cromossomo[corte::]
         
-        filhos = [Individuo(self.espacos, self.valores, self.limite_espacos, self.geracao + 1),
-                  Individuo(self.espacos, self.valores, self.limite_espacos, self.geracao + 1)]
+        filhos = [Individuo(self.espacos, self.valores, self.limite_espacos, geracao_atual),
+                  Individuo(self.espacos, self.valores, self.limite_espacos, geracao_atual)]
         filhos[0].cromossomo = filho1
         filhos[1].cromossomo = filho2
         return filhos
@@ -62,13 +62,14 @@ class AlgoritmoGenetico():
     def __init__(self, tamanho_populacao):
         self.tamanho_populacao = tamanho_populacao
         self.populacao = []
-        self.geracao = 0
+        self.geracao = 1
         self.melhor_solucao = 0
         self.lista_solucoes = []
         
     def inicializa_populacao(self, espacos, valores, limite_espacos):
         for i in range(self.tamanho_populacao):
             self.populacao.append(Individuo(espacos, valores, limite_espacos))
+        self.ordena_populacao()
         self.melhor_solucao = self.populacao[0]
         
     def ordena_populacao(self):
@@ -116,31 +117,32 @@ class AlgoritmoGenetico():
         
         self.visualiza_geracao()
         
-        for geracao in range(numero_geracoes):
+        for geracao in range(numero_geracoes-1):
             soma_avaliacao = self.soma_avaliacoes()
-            nova_populacao = [self.populacao[0]] # mantém melhor indivíduo da geração atual
+            nova_populacao = []
+            nova_populacao.append(self.populacao[0]) # mantém melhor indivíduo da geração atual
             
-            for individuos_gerados in range(0, self.tamanho_populacao-1, 2):
+            for individuos_gerados in range(0, self.tamanho_populacao, 2):
                 pai1 = self.seleciona_pai_roleta_viciada(soma_avaliacao)
                 pai2 = self.seleciona_pai_roleta_viciada(soma_avaliacao)
                 
-                filhos = self.populacao[pai1].crossover(self.populacao[pai2])
+                filhos = self.populacao[pai1].crossover(self.populacao[pai2], geracao_atual = geracao+1)
                 
                 nova_populacao.append(filhos[0].mutacao(taxa_mutacao))
                 nova_populacao.append(filhos[1].mutacao(taxa_mutacao))
             
-            self.populacao = list(nova_populacao)
+            self.populacao = nova_populacao
             
             for individuo in self.populacao:
                 individuo.avaliacao()
             
             self.ordena_populacao()
             
-            self.visualiza_geracao()
-            
             melhor = self.populacao[0]
-            self.lista_solucoes.append(melhor.nota_avaliacao)
             self.melhor_individuo(melhor)
+            self.lista_solucoes.append(self.melhor_solucao.nota_avaliacao)
+
+            self.visualiza_geracao()
         
         print("\nMelhor solução -> G: %s Valor: %s Espaço: %s Cromossomo: %s" %
               (self.melhor_solucao.geracao,

@@ -136,11 +136,11 @@ class AlgoritmoGenetico():
             
             self.ordena_populacao()
             
-            self.visualiza_geracao()
             
             melhor = self.populacao[0]
             self.lista_solucoes.append(melhor.nota_avaliacao)
             self.melhor_individuo(melhor)
+            self.visualiza_geracao()
         
         print("\nMelhor solução -> G: %s Valor: %s Espaço: %s Cromossomo: %s" %
               (self.melhor_solucao.geracao,
