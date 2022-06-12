@@ -1,0 +1,33 @@
+
+página 222
+conda activate py27
+conda activate py35
+python petrilab.pyw
+
+
+Nome da Tarefa:
+AVALIAÇÃO REDES PETRI
+Descrição:
+
+Prezados discentes,
+Esta tarefa será avaliada dia 13 de junho, vocês deverão apresentar um dos exercicios propostos:
+Os exercicios são do capitulo 9, do livro básico.
+Estão na página 320 do pdf.
+
+Estes são:
+8.1
+8.6
+8.8
+8.10
+
+Atenciosamente,
+Leslye Castro
+
+Período:
+Inicia em 01/06/2022 às 00h00 e finaliza em 12/06/2022 às 23h59
+
+
+https://sourceforge.net/projects/pipe2/
+
+https://sourceforge.net/projects/petrilab/
+
