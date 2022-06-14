@@ -1,0 +1,59 @@
+--- Package: ------------------------------------------------------------- 
+PACKAGE data_load IS 
+	CONSTANT bits: POSITIVE := 8; 
+	TYPE x_input IS ARRAY (NATURAL RANGE <>) OF BIT_VECTOR(bits-1 DOWNTO 0); 
+END data_load; 
+-------------------------------------------------------------------------- 
+ 
+--- Multiplexer (a component):  
+ENTITY multiplexer IS 
+	GENERIC (bits: POSITIVE); 
+	PORT (inp1, inp2: IN BIT_VECTOR(bits-1 DOWNTO 0); 
+	      sel: IN BIT; 
+			outp: OUT BIT_VECTOR(bits-1 DOWNTO 0)); 
+END multiplexer; 
+------------------------------------------------------ 
+ARCHITECTURE multiplexer OF multiplexer IS 
+BEGIN 
+	outp <= inpl WHEN sel='0' ELSE inp2; 
+END multiplexer; 
+------------------------------------------------------ 
+
+--- ff_bank (another component): 
+ENTITY ff_bank IS 
+	GENERIC (bits: POSITIVE); 
+	PORT (d: IN BIT_VECTOR(bits-1 DOWNTO 0); 
+			clk: IN BIT; 
+			q: OUT BIT_VECTOR(bits-1 DOWNTO 0)); 
+END ff_bank; 
+------------------------------------------------------ 
+ARCHITECTURE ff_bank OF ff_bank IS 
+BEGIN 
+	PROCESS (c1k) 
+	BEGIN 
+		IF (clk'EVENT AND clk='1') THEN 
+			q <= d; 
+		END IF; 
+	END PROCESS; 
+END ff_bank; 
+------------------------------------------------------ 
+
+--- Main code:  
+USE work.data_load.all;  
+------------------------------------------------------ 
+ENTITY shift_register IS 
+	GENERIC (M: INTEGER := 4;  --number of stages 
+				N: INTEGER := 8); --number of bits 
+	PORT (clk, load: IN BIT; 
+	      x: IN x_input(1 TO M); 
+			d: IN BIT_VECTOR(N-1 DOWNTO 0); 
+			q: OUT BIT_VECTOR(N-1 DOWNTO 0)); 
+END shift_register;   
+------------------------------------------------------ 
+ARCHITECTURE structural OF shift_register IS 
+	SIGNAL temp1: x_input(0 TO M); 
+	SIGNAL temp2: x_input(1 TO M); 
+------------------------------------------------------ 
+
+
+

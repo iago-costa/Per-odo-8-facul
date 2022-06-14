@@ -1,0 +1,26 @@
+# do n_infinito_with_when_and_generate.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module address_decoder
+# 
+# Top level modules:
+# 	address_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module address_decoder_vlg_sample_tst
+# -- Compiling module address_decoder_vlg_check_tst
+# -- Compiling module address_decoder_vlg_vec_tst
+# 
+# Top level modules:
+# 	address_decoder_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.address_decoder_vlg_vec_tst 
+# Loading work.address_decoder_vlg_vec_tst
+# Loading work.address_decoder
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading work.address_decoder_vlg_sample_tst
+# Loading work.address_decoder_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : teste01.vwf.vt(1281)
+#    Time: 1 us  Iteration: 0  Instance: /address_decoder_vlg_vec_tst/tb_out

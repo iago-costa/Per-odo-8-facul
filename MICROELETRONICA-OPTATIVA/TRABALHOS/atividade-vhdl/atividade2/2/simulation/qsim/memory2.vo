@@ -1,0 +1,346 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "06/13/2022 18:48:02"
+
+// 
+// Device: Altera EP4CGX15BF14C6 Package FBGA169
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module memory2 (
+	bcd,
+	ssd);
+input 	[3:0] bcd;
+output 	[6:0] ssd;
+
+// Design Ports Information
+// ssd[0]	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ssd[1]	=>  Location: PIN_N8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ssd[2]	=>  Location: PIN_L9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ssd[3]	=>  Location: PIN_N9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ssd[4]	=>  Location: PIN_L5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ssd[5]	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ssd[6]	=>  Location: PIN_M4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// bcd[0]	=>  Location: PIN_K9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// bcd[1]	=>  Location: PIN_H10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// bcd[2]	=>  Location: PIN_G13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// bcd[3]	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \ssd[0]~output_o ;
+wire \ssd[1]~output_o ;
+wire \ssd[2]~output_o ;
+wire \ssd[3]~output_o ;
+wire \ssd[4]~output_o ;
+wire \ssd[5]~output_o ;
+wire \ssd[6]~output_o ;
+wire \bcd[3]~input_o ;
+wire \bcd[0]~input_o ;
+wire \bcd[2]~input_o ;
+wire \bcd[1]~input_o ;
+wire \Mux6~0_combout ;
+wire \Mux5~0_combout ;
+wire \Mux4~0_combout ;
+wire \Mux3~0_combout ;
+wire \Mux2~0_combout ;
+wire \Mux1~0_combout ;
+wire \Mux0~0_combout ;
+
+
+// Location: IOOBUF_X14_Y0_N2
+cycloneiv_io_obuf \ssd[0]~output (
+	.i(\Mux6~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ssd[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ssd[0]~output .bus_hold = "false";
+defparam \ssd[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y0_N9
+cycloneiv_io_obuf \ssd[1]~output (
+	.i(!\Mux5~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ssd[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ssd[1]~output .bus_hold = "false";
+defparam \ssd[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X24_Y0_N9
+cycloneiv_io_obuf \ssd[2]~output (
+	.i(!\Mux4~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ssd[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ssd[2]~output .bus_hold = "false";
+defparam \ssd[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y0_N2
+cycloneiv_io_obuf \ssd[3]~output (
+	.i(!\Mux3~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ssd[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ssd[3]~output .bus_hold = "false";
+defparam \ssd[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y0_N9
+cycloneiv_io_obuf \ssd[4]~output (
+	.i(!\Mux2~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ssd[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ssd[4]~output .bus_hold = "false";
+defparam \ssd[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X8_Y0_N9
+cycloneiv_io_obuf \ssd[5]~output (
+	.i(\Mux1~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ssd[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ssd[5]~output .bus_hold = "false";
+defparam \ssd[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X8_Y0_N2
+cycloneiv_io_obuf \ssd[6]~output (
+	.i(!\Mux0~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ssd[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ssd[6]~output .bus_hold = "false";
+defparam \ssd[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y16_N15
+cycloneiv_io_ibuf \bcd[3]~input (
+	.i(bcd[3]),
+	.ibar(gnd),
+	.o(\bcd[3]~input_o ));
+// synopsys translate_off
+defparam \bcd[3]~input .bus_hold = "false";
+defparam \bcd[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X22_Y0_N1
+cycloneiv_io_ibuf \bcd[0]~input (
+	.i(bcd[0]),
+	.ibar(gnd),
+	.o(\bcd[0]~input_o ));
+// synopsys translate_off
+defparam \bcd[0]~input .bus_hold = "false";
+defparam \bcd[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y16_N22
+cycloneiv_io_ibuf \bcd[2]~input (
+	.i(bcd[2]),
+	.ibar(gnd),
+	.o(\bcd[2]~input_o ));
+// synopsys translate_off
+defparam \bcd[2]~input .bus_hold = "false";
+defparam \bcd[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y14_N1
+cycloneiv_io_ibuf \bcd[1]~input (
+	.i(bcd[1]),
+	.ibar(gnd),
+	.o(\bcd[1]~input_o ));
+// synopsys translate_off
+defparam \bcd[1]~input .bus_hold = "false";
+defparam \bcd[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y3_N8
+cycloneiv_lcell_comb \Mux6~0 (
+// Equation(s):
+// \Mux6~0_combout  = (\bcd[3]~input_o ) # ((\bcd[2]~input_o  & ((!\bcd[1]~input_o ) # (!\bcd[0]~input_o ))) # (!\bcd[2]~input_o  & ((\bcd[1]~input_o ))))
+
+	.dataa(\bcd[3]~input_o ),
+	.datab(\bcd[0]~input_o ),
+	.datac(\bcd[2]~input_o ),
+	.datad(\bcd[1]~input_o ),
+	.cin(gnd),
+	.combout(\Mux6~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mux6~0 .lut_mask = 16'hBFFA;
+defparam \Mux6~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y3_N26
+cycloneiv_lcell_comb \Mux5~0 (
+// Equation(s):
+// \Mux5~0_combout  = (!\bcd[3]~input_o  & ((\bcd[0]~input_o  & ((\bcd[1]~input_o ) # (!\bcd[2]~input_o ))) # (!\bcd[0]~input_o  & (!\bcd[2]~input_o  & \bcd[1]~input_o ))))
+
+	.dataa(\bcd[3]~input_o ),
+	.datab(\bcd[0]~input_o ),
+	.datac(\bcd[2]~input_o ),
+	.datad(\bcd[1]~input_o ),
+	.cin(gnd),
+	.combout(\Mux5~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mux5~0 .lut_mask = 16'h4504;
+defparam \Mux5~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y3_N4
+cycloneiv_lcell_comb \Mux4~0 (
+// Equation(s):
+// \Mux4~0_combout  = (\bcd[0]~input_o ) # ((\bcd[2]~input_o  & !\bcd[1]~input_o ))
+
+	.dataa(gnd),
+	.datab(\bcd[0]~input_o ),
+	.datac(\bcd[2]~input_o ),
+	.datad(\bcd[1]~input_o ),
+	.cin(gnd),
+	.combout(\Mux4~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mux4~0 .lut_mask = 16'hCCFC;
+defparam \Mux4~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y3_N22
+cycloneiv_lcell_comb \Mux3~0 (
+// Equation(s):
+// \Mux3~0_combout  = (!\bcd[3]~input_o  & ((\bcd[0]~input_o  & (\bcd[2]~input_o  $ (!\bcd[1]~input_o ))) # (!\bcd[0]~input_o  & (\bcd[2]~input_o  & !\bcd[1]~input_o ))))
+
+	.dataa(\bcd[3]~input_o ),
+	.datab(\bcd[0]~input_o ),
+	.datac(\bcd[2]~input_o ),
+	.datad(\bcd[1]~input_o ),
+	.cin(gnd),
+	.combout(\Mux3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mux3~0 .lut_mask = 16'h4014;
+defparam \Mux3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y3_N16
+cycloneiv_lcell_comb \Mux2~0 (
+// Equation(s):
+// \Mux2~0_combout  = (!\bcd[0]~input_o  & (!\bcd[2]~input_o  & \bcd[1]~input_o ))
+
+	.dataa(gnd),
+	.datab(\bcd[0]~input_o ),
+	.datac(\bcd[2]~input_o ),
+	.datad(\bcd[1]~input_o ),
+	.cin(gnd),
+	.combout(\Mux2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mux2~0 .lut_mask = 16'h0300;
+defparam \Mux2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y3_N2
+cycloneiv_lcell_comb \Mux1~0 (
+// Equation(s):
+// \Mux1~0_combout  = (\bcd[0]~input_o  $ (!\bcd[1]~input_o )) # (!\bcd[2]~input_o )
+
+	.dataa(gnd),
+	.datab(\bcd[0]~input_o ),
+	.datac(\bcd[2]~input_o ),
+	.datad(\bcd[1]~input_o ),
+	.cin(gnd),
+	.combout(\Mux1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mux1~0 .lut_mask = 16'hCF3F;
+defparam \Mux1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X16_Y3_N12
+cycloneiv_lcell_comb \Mux0~0 (
+// Equation(s):
+// \Mux0~0_combout  = (!\bcd[3]~input_o  & (!\bcd[1]~input_o  & (\bcd[0]~input_o  $ (\bcd[2]~input_o ))))
+
+	.dataa(\bcd[3]~input_o ),
+	.datab(\bcd[0]~input_o ),
+	.datac(\bcd[2]~input_o ),
+	.datad(\bcd[1]~input_o ),
+	.cin(gnd),
+	.combout(\Mux0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Mux0~0 .lut_mask = 16'h0014;
+defparam \Mux0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign ssd[0] = \ssd[0]~output_o ;
+
+assign ssd[1] = \ssd[1]~output_o ;
+
+assign ssd[2] = \ssd[2]~output_o ;
+
+assign ssd[3] = \ssd[3]~output_o ;
+
+assign ssd[4] = \ssd[4]~output_o ;
+
+assign ssd[5] = \ssd[5]~output_o ;
+
+assign ssd[6] = \ssd[6]~output_o ;
+
+endmodule

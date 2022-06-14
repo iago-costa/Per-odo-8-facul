@@ -1,0 +1,21 @@
+--- Main code:  
+USE work.data_load.all;  
+------------------------------------------------------ 
+ENTITY shift_register IS 
+	GENERIC (M: INTEGER := 4;  --number of stages 
+				N: INTEGER := 8); --number of bits 
+	PORT (clk, load: IN BIT; 
+	      x: IN x_input(1 TO M); 
+			d: IN BIT_VECTOR(N-1 DOWNTO 0); 
+			q: OUT BIT_VECTOR(N-1 DOWNTO 0)); 
+END shift_register;   
+------------------------------------------------------ 
+ARCHITECTURE structural OF shift_register IS 
+	SIGNAL temp1: x_input(0 TO M); 
+	SIGNAL temp2: x_input(1 TO M); 
+------------------------------------------------------ 
+COMPONENT multiplexer IS GENERIC (bits: POSITIVE); PORT (inpl, inp2: IN BIT_VECTOR(bits-1 DOWNTO 0); sel: IN BIT; outp: OUT BIT_VECTOR(bits-1 DOWNTO 0)); END COMPONENT; 
+COMPONENT ff_bank IS GENERIC (bits: POSITIVE); PORT (d: IN BIT_VECTOR(bits-1 DOWNTO 0); clk: IN BIT; q: OUT BIT _VECTOR(bits-1 DOWNTO 0)); END COMPONENT; 
+
+
+

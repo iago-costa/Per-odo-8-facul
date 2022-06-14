@@ -1,0 +1,37 @@
+-----------------Package:----------------------------------------------
+PACKAGE memory2 IS
+
+
+	FUNCTION bcd_to_ssd (SIGNAL bcd: INTEGER) RETURN BIT_VECTOR;
+END memory2;
+-----------------------------------------------------------------
+PACKAGE BODY memory2 IS
+	FUNCTION bcd_to_ssd (SIGNAL bcd : INTEGER) RETURN BIT_VECTOR IS
+		TYPE memory IS ARRAY (0 TO 9) Ot BIT_VECTOR{6 DOWNTO O) ;
+		CONSTANT rom: memory := (
+			"1111110",
+			"0110000",
+			"1101101",
+			"1111001",
+			"0110011",
+			"1011011",
+			"1011111",
+			"1110000",
+			"1111111",
+			"11110111");
+	BEGIN
+		RETURN rom (bcd);
+	END bcd_to_ssd;
+END memory2;
+---------------------Main code.----------------------------------------
+USE work.memory2.all;
+ENTITY ssd_driver IS
+	PORT (bcd : IN INTEGER RANGE 0 TO 9;
+		ssd: OUT BIT_VECTOR(6 DOWNTO 0));
+END ssd_driver;
+----------------------------------------------------------------------
+ARCHITECTURE ssd_driver OF ssd_driver IS
+BEGIN
+	ssd <= bcd_to_ssd(bcd);
+END ssd_driver;
+---------------------------------------------------------------------

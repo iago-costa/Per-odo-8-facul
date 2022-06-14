@@ -1,0 +1,42 @@
+library verilog;
+use verilog.vl_types.all;
+entity shift_register is
+    port(
+        clk             : in     vl_logic;
+        load            : in     vl_logic;
+        x_4_0           : in     vl_logic;
+        x_4_1           : in     vl_logic;
+        x_4_2           : in     vl_logic;
+        x_4_3           : in     vl_logic;
+        x_4_4           : in     vl_logic;
+        x_4_5           : in     vl_logic;
+        x_4_6           : in     vl_logic;
+        x_4_7           : in     vl_logic;
+        x_3_0           : in     vl_logic;
+        x_3_1           : in     vl_logic;
+        x_3_2           : in     vl_logic;
+        x_3_3           : in     vl_logic;
+        x_3_4           : in     vl_logic;
+        x_3_5           : in     vl_logic;
+        x_3_6           : in     vl_logic;
+        x_3_7           : in     vl_logic;
+        x_2_0           : in     vl_logic;
+        x_2_1           : in     vl_logic;
+        x_2_2           : in     vl_logic;
+        x_2_3           : in     vl_logic;
+        x_2_4           : in     vl_logic;
+        x_2_5           : in     vl_logic;
+        x_2_6           : in     vl_logic;
+        x_2_7           : in     vl_logic;
+        x_1_0           : in     vl_logic;
+        x_1_1           : in     vl_logic;
+        x_1_2           : in     vl_logic;
+        x_1_3           : in     vl_logic;
+        x_1_4           : in     vl_logic;
+        x_1_5           : in     vl_logic;
+        x_1_6           : in     vl_logic;
+        x_1_7           : in     vl_logic;
+        d               : in     vl_logic_vector(7 downto 0);
+        q               : out    vl_logic_vector(7 downto 0)
+    );
+end shift_register;

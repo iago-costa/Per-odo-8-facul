@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\atividade2\2\simulation\qsim
+vmemory2
+Z1 Ije:6ZY8RjUE4ohCCTG0Oz0
+Z2 V[5IQ@81Pa>YS<`=P_l<gF2
+Z3 dC:\altera\13.1\atividade2\2\simulation\qsim
+Z4 w1655156882
+Z5 8memory2.vo
+Z6 Fmemory2.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 R`b^Cl:XdI=S0AjD;3jG=1
+!s85 0
+Z10 !s108 1655156884.413000
+Z11 !s107 memory2.vo|
+Z12 !s90 -work|work|memory2.vo|
+!s101 -O0
+vmemory2_vlg_check_tst
+!i10b 1
+!s100 [HgXD?KdV8RlnKzkllRC<0
+I6zMK_9L5UIl7>jSLk?d_B0
+V?cg59<W4]<4ibK;mE8@hZ1
+R3
+Z13 w1655156879
+Z14 8memory2.vwf.vt
+Z15 Fmemory2.vwf.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1655156884.722000
+Z17 !s107 memory2.vwf.vt|
+Z18 !s90 -work|work|memory2.vwf.vt|
+!s101 -O0
+R8
+vmemory2_vlg_sample_tst
+!i10b 1
+!s100 iFE4j]<UB<gdbm;GjhO>B0
+IRFzDMVY::nKFg0@TALPa20
+VmU8:OV`NfhBGz6RFI9k^`3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vmemory2_vlg_vec_tst
+!i10b 1
+!s100 _R7>h2hcVO?5MT9o9=lXI1
+Ia;V>0>Vf[B@8]RDiGeB9C2
+VSHP=b>nD:W268e40N<6P;0
+R3
+R13
+R14
+R15
+L0 259
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

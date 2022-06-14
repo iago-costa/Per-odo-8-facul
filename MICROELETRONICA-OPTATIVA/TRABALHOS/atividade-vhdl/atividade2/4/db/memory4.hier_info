@@ -1,0 +1,47 @@
+|memory4
+clk => ram~12.CLK
+clk => ram~0.CLK
+clk => ram~1.CLK
+clk => ram~2.CLK
+clk => ram~3.CLK
+clk => ram~4.CLK
+clk => ram~5.CLK
+clk => ram~6.CLK
+clk => ram~7.CLK
+clk => ram~8.CLK
+clk => ram~9.CLK
+clk => ram~10.CLK
+clk => ram~11.CLK
+clk => ram.CLK0
+write => ram~12.DATAIN
+write => data[0].OE
+write => data[1].OE
+write => data[2].OE
+write => data[3].OE
+write => data[4].OE
+write => data[5].OE
+write => data[6].OE
+write => data[7].OE
+write => ram.WE
+address[0] => ram~3.DATAIN
+address[0] => ram.WADDR
+address[0] => ram.RADDR
+address[1] => ram~2.DATAIN
+address[1] => ram.WADDR1
+address[1] => ram.RADDR1
+address[2] => ram~1.DATAIN
+address[2] => ram.WADDR2
+address[2] => ram.RADDR2
+address[3] => ram~0.DATAIN
+address[3] => ram.WADDR3
+address[3] => ram.RADDR3
+data[0] <> data[0]
+data[1] <> data[1]
+data[2] <> data[2]
+data[3] <> data[3]
+data[4] <> data[4]
+data[5] <> data[5]
+data[6] <> data[6]
+data[7] <> data[7]
+
+

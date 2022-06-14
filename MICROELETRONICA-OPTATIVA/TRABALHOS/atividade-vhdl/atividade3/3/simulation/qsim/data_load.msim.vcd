@@ -1,0 +1,672 @@
+$comment
+	File created using the following command:
+		vcd file data_load.msim.vcd -direction
+$end
+$date
+	Mon Jun 13 23:17:07 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module shift_register_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 8 " d [7:0] $end
+$var reg 1 # load $end
+$var reg 1 $ x_4_7 $end
+$var reg 1 % x_4_6 $end
+$var reg 1 & x_4_5 $end
+$var reg 1 ' x_4_4 $end
+$var reg 1 ( x_4_3 $end
+$var reg 1 ) x_4_2 $end
+$var reg 1 * x_4_1 $end
+$var reg 1 + x_4_0 $end
+$var wire 1 , q [7] $end
+$var wire 1 - q [6] $end
+$var wire 1 . q [5] $end
+$var wire 1 / q [4] $end
+$var wire 1 0 q [3] $end
+$var wire 1 1 q [2] $end
+$var wire 1 2 q [1] $end
+$var wire 1 3 q [0] $end
+$var wire 1 4 sampler $end
+$var wire 1 5 x_1_7 $end
+$var wire 1 6 x_1_6 $end
+$var wire 1 7 x_1_5 $end
+$var wire 1 8 x_1_4 $end
+$var wire 1 9 x_1_3 $end
+$var wire 1 : x_1_2 $end
+$var wire 1 ; x_1_1 $end
+$var wire 1 < x_1_0 $end
+$var wire 1 = x_2_7 $end
+$var wire 1 > x_2_6 $end
+$var wire 1 ? x_2_5 $end
+$var wire 1 @ x_2_4 $end
+$var wire 1 A x_2_3 $end
+$var wire 1 B x_2_2 $end
+$var wire 1 C x_2_1 $end
+$var wire 1 D x_2_0 $end
+$var wire 1 E x_3_7 $end
+$var wire 1 F x_3_6 $end
+$var wire 1 G x_3_5 $end
+$var wire 1 H x_3_4 $end
+$var wire 1 I x_3_3 $end
+$var wire 1 J x_3_2 $end
+$var wire 1 K x_3_1 $end
+$var wire 1 L x_3_0 $end
+$scope module i1 $end
+$var wire 1 M gnd $end
+$var wire 1 N vcc $end
+$var wire 1 O unknown $end
+$var tri1 1 P devclrn $end
+$var tri1 1 Q devpor $end
+$var tri1 1 R devoe $end
+$var wire 1 S q[0]~output_o $end
+$var wire 1 T q[1]~output_o $end
+$var wire 1 U q[2]~output_o $end
+$var wire 1 V q[3]~output_o $end
+$var wire 1 W q[4]~output_o $end
+$var wire 1 X q[5]~output_o $end
+$var wire 1 Y q[6]~output_o $end
+$var wire 1 Z q[7]~output_o $end
+$var wire 1 [ clk~input_o $end
+$var wire 1 \ x[4][0]~input_o $end
+$var wire 1 ] x[3][0]~input_o $end
+$var wire 1 ^ x[2][0]~input_o $end
+$var wire 1 _ x[1][0]~input_o $end
+$var wire 1 ` d[0]~input_o $end
+$var wire 1 a load~input_o $end
+$var wire 1 b g:1:mux|outp[0]~0_combout $end
+$var wire 1 c g:2:mux|outp[0]~0_combout $end
+$var wire 1 d g:3:mux|outp[0]~0_combout $end
+$var wire 1 e g:4:mux|outp[0]~0_combout $end
+$var wire 1 f x[4][1]~input_o $end
+$var wire 1 g x[3][1]~input_o $end
+$var wire 1 h x[2][1]~input_o $end
+$var wire 1 i x[1][1]~input_o $end
+$var wire 1 j d[1]~input_o $end
+$var wire 1 k g:1:mux|outp[1]~1_combout $end
+$var wire 1 l g:2:mux|outp[1]~1_combout $end
+$var wire 1 m g:3:mux|outp[1]~1_combout $end
+$var wire 1 n g:4:mux|outp[1]~1_combout $end
+$var wire 1 o x[4][2]~input_o $end
+$var wire 1 p x[3][2]~input_o $end
+$var wire 1 q x[2][2]~input_o $end
+$var wire 1 r x[1][2]~input_o $end
+$var wire 1 s d[2]~input_o $end
+$var wire 1 t g:1:mux|outp[2]~2_combout $end
+$var wire 1 u g:2:mux|outp[2]~2_combout $end
+$var wire 1 v g:3:mux|outp[2]~2_combout $end
+$var wire 1 w g:4:mux|outp[2]~2_combout $end
+$var wire 1 x x[4][3]~input_o $end
+$var wire 1 y x[3][3]~input_o $end
+$var wire 1 z x[2][3]~input_o $end
+$var wire 1 { x[1][3]~input_o $end
+$var wire 1 | d[3]~input_o $end
+$var wire 1 } g:1:mux|outp[3]~3_combout $end
+$var wire 1 ~ g:2:mux|outp[3]~3_combout $end
+$var wire 1 !! g:3:mux|outp[3]~3_combout $end
+$var wire 1 "! g:4:mux|outp[3]~3_combout $end
+$var wire 1 #! x[4][4]~input_o $end
+$var wire 1 $! x[3][4]~input_o $end
+$var wire 1 %! x[2][4]~input_o $end
+$var wire 1 &! x[1][4]~input_o $end
+$var wire 1 '! d[4]~input_o $end
+$var wire 1 (! g:1:mux|outp[4]~4_combout $end
+$var wire 1 )! g:2:mux|outp[4]~4_combout $end
+$var wire 1 *! g:3:mux|outp[4]~4_combout $end
+$var wire 1 +! g:4:mux|outp[4]~4_combout $end
+$var wire 1 ,! x[4][5]~input_o $end
+$var wire 1 -! x[3][5]~input_o $end
+$var wire 1 .! x[2][5]~input_o $end
+$var wire 1 /! x[1][5]~input_o $end
+$var wire 1 0! d[5]~input_o $end
+$var wire 1 1! g:1:mux|outp[5]~5_combout $end
+$var wire 1 2! g:2:mux|outp[5]~5_combout $end
+$var wire 1 3! g:3:mux|outp[5]~5_combout $end
+$var wire 1 4! g:4:mux|outp[5]~5_combout $end
+$var wire 1 5! x[4][6]~input_o $end
+$var wire 1 6! x[3][6]~input_o $end
+$var wire 1 7! x[2][6]~input_o $end
+$var wire 1 8! x[1][6]~input_o $end
+$var wire 1 9! d[6]~input_o $end
+$var wire 1 :! g:1:mux|outp[6]~6_combout $end
+$var wire 1 ;! g:2:mux|outp[6]~6_combout $end
+$var wire 1 <! g:3:mux|outp[6]~6_combout $end
+$var wire 1 =! g:4:mux|outp[6]~6_combout $end
+$var wire 1 >! x[4][7]~input_o $end
+$var wire 1 ?! x[3][7]~input_o $end
+$var wire 1 @! x[2][7]~input_o $end
+$var wire 1 A! x[1][7]~input_o $end
+$var wire 1 B! d[7]~input_o $end
+$var wire 1 C! g:1:mux|outp[7]~7_combout $end
+$var wire 1 D! g:2:mux|outp[7]~7_combout $end
+$var wire 1 E! g:3:mux|outp[7]~7_combout $end
+$var wire 1 F! g:4:mux|outp[7]~7_combout $end
+$var wire 1 G! g:1:ff|q [7] $end
+$var wire 1 H! g:1:ff|q [6] $end
+$var wire 1 I! g:1:ff|q [5] $end
+$var wire 1 J! g:1:ff|q [4] $end
+$var wire 1 K! g:1:ff|q [3] $end
+$var wire 1 L! g:1:ff|q [2] $end
+$var wire 1 M! g:1:ff|q [1] $end
+$var wire 1 N! g:1:ff|q [0] $end
+$var wire 1 O! g:4:ff|q [7] $end
+$var wire 1 P! g:4:ff|q [6] $end
+$var wire 1 Q! g:4:ff|q [5] $end
+$var wire 1 R! g:4:ff|q [4] $end
+$var wire 1 S! g:4:ff|q [3] $end
+$var wire 1 T! g:4:ff|q [2] $end
+$var wire 1 U! g:4:ff|q [1] $end
+$var wire 1 V! g:4:ff|q [0] $end
+$var wire 1 W! g:3:ff|q [7] $end
+$var wire 1 X! g:3:ff|q [6] $end
+$var wire 1 Y! g:3:ff|q [5] $end
+$var wire 1 Z! g:3:ff|q [4] $end
+$var wire 1 [! g:3:ff|q [3] $end
+$var wire 1 \! g:3:ff|q [2] $end
+$var wire 1 ]! g:3:ff|q [1] $end
+$var wire 1 ^! g:3:ff|q [0] $end
+$var wire 1 _! g:2:ff|q [7] $end
+$var wire 1 `! g:2:ff|q [6] $end
+$var wire 1 a! g:2:ff|q [5] $end
+$var wire 1 b! g:2:ff|q [4] $end
+$var wire 1 c! g:2:ff|q [3] $end
+$var wire 1 d! g:2:ff|q [2] $end
+$var wire 1 e! g:2:ff|q [1] $end
+$var wire 1 f! g:2:ff|q [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+1$
+0%
+1&
+1'
+0(
+1)
+0*
+0+
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+x4
+0M
+1N
+xO
+1P
+1Q
+1R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+z]
+z^
+z_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+zg
+zh
+zi
+0j
+0k
+0l
+0m
+0n
+1o
+zp
+zq
+zr
+0s
+0t
+0u
+0v
+0w
+0x
+zy
+zz
+z{
+0|
+0}
+0~
+0!!
+0"!
+1#!
+z$!
+z%!
+z&!
+0'!
+0(!
+0)!
+0*!
+0+!
+1,!
+z-!
+z.!
+z/!
+00!
+01!
+02!
+03!
+04!
+05!
+z6!
+z7!
+z8!
+09!
+0:!
+0;!
+0<!
+0=!
+1>!
+z?!
+z@!
+zA!
+0B!
+0C!
+0D!
+0E!
+0F!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+0W!
+0f!
+0e!
+0d!
+0c!
+0b!
+0a!
+0`!
+0_!
+z5
+z6
+z7
+z8
+z9
+z:
+z;
+z<
+z=
+z>
+z?
+z@
+zA
+zB
+zC
+zD
+zE
+zF
+zG
+zH
+zI
+zJ
+zK
+zL
+$end
+#50000
+1!
+1[
+04
+#100000
+0$
+0&
+0'
+1(
+0)
+0!
+0>!
+0,!
+0#!
+1x
+0o
+0[
+14
+#150000
+1!
+1[
+04
+#200000
+1#
+b1000000 "
+b1010000 "
+b1011000 "
+b1011010 "
+1*
+1+
+1$
+0!
+1a
+1j
+1|
+1'!
+19!
+1f
+1\
+1>!
+0[
+14
+1F!
+xE!
+xD!
+xC!
+x<!
+x;!
+x:!
+x3!
+x2!
+x1!
+x*!
+x)!
+x(!
+1"!
+x!!
+x~
+x}
+xv
+xu
+xt
+1n
+xm
+xl
+xk
+1e
+xd
+xc
+xb
+#250000
+1!
+1[
+04
+xW!
+x_!
+xG!
+xX!
+x`!
+xH!
+xY!
+xa!
+xI!
+xZ!
+xb!
+xJ!
+x[!
+xc!
+xK!
+x\!
+xd!
+xL!
+x]!
+xe!
+xM!
+x^!
+xf!
+xN!
+1O!
+1S!
+1U!
+1V!
+1Z
+1V
+1T
+1S
+1,
+10
+12
+13
+#300000
+1'
+0#
+0$
+0!
+1#!
+0a
+0>!
+0[
+14
+x+!
+xF!
+0C!
+x=!
+1:!
+x4!
+01!
+1(!
+x"!
+1}
+xw
+0t
+xn
+1k
+xe
+0b
+#350000
+1!
+1[
+04
+0G!
+1H!
+0I!
+1J!
+1K!
+0L!
+1M!
+0N!
+xO!
+xP!
+xQ!
+xR!
+xS!
+xT!
+xU!
+xV!
+0D!
+1;!
+02!
+1)!
+1~
+0u
+1l
+0c
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+x,
+x-
+x.
+x/
+x0
+x1
+x2
+x3
+#400000
+1%
+1$
+0!
+15!
+1>!
+0[
+14
+#450000
+1!
+1[
+04
+0_!
+1`!
+0a!
+1b!
+1c!
+0d!
+1e!
+0f!
+0E!
+1<!
+03!
+1*!
+1!!
+0v
+1m
+0d
+#500000
+0'
+0%
+0$
+0!
+0#!
+05!
+0>!
+0[
+14
+#550000
+1!
+1[
+04
+0W!
+1X!
+0Y!
+1Z!
+1[!
+0\!
+1]!
+0^!
+0F!
+1=!
+04!
+1+!
+1"!
+0w
+1n
+0e
+#600000
+1)
+0*
+1'
+1$
+0!
+1o
+0f
+1#!
+1>!
+0[
+14
+#650000
+1!
+1[
+04
+0O!
+1P!
+0Q!
+1R!
+1S!
+0T!
+1U!
+0V!
+0Z
+1Y
+0X
+1W
+1V
+0U
+1T
+0S
+0,
+1-
+0.
+1/
+10
+01
+12
+03
+#700000
+0(
+1*
+0$
+0!
+0x
+1f
+0>!
+0[
+14
+#750000
+1!
+1[
+04
+#800000
+1&
+0+
+0)
+1(
+0!
+1,!
+0\
+0o
+1x
+0[
+14
+#850000
+1!
+1[
+04
+#900000
+0'
+1$
+0&
+0!
+0#!
+1>!
+0,!
+0[
+14
+#950000
+1!
+1[
+04
+#1000000

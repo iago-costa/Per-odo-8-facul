@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\iagof\Documents\Per-odo-8-facul\MICROELETRONICA-OPTATIVA\TRABALHOS\atividade-vhdl\atividade3\2\simulation\qsim
+vaddress_decoder
+Z1 Ii<V4=Az:lGcZcf@<M863M0
+Z2 VS5O6:XXE7nFeQBUM>GB`;2
+Z3 dC:\Users\iagof\Documents\Per-odo-8-facul\MICROELETRONICA-OPTATIVA\TRABALHOS\atividade-vhdl\atividade3\2\simulation\qsim
+Z4 w1655172040
+Z5 8n_infinito_with_when_and_generate.vo
+Z6 Fn_infinito_with_when_and_generate.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|n_infinito_with_when_and_generate.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 ha^N1_4[HVEzIA@ZRl]Vm3
+!s85 0
+Z11 !s108 1655172041.518000
+Z12 !s107 n_infinito_with_when_and_generate.vo|
+!s101 -O0
+vaddress_decoder_vlg_check_tst
+!i10b 1
+!s100 6iVoR2WQ:ffAHLnM[VYHj2
+I_>Q<_l=_iV4YB5Bo1R7kF2
+Vz[coK<Kb1Z5ihbGBFi_[f3
+R3
+Z13 w1655172038
+Z14 8teste01.vwf.vt
+Z15 Fteste01.vwf.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1655172041.638000
+Z17 !s107 teste01.vwf.vt|
+Z18 !s90 -work|work|teste01.vwf.vt|
+!s101 -O0
+R9
+vaddress_decoder_vlg_sample_tst
+!i10b 1
+!s100 di:Xbeff^Kae@o8U6cPW62
+IL8Y0eiTCc<IVaIPmBmczo2
+V3HYRc78BjU@8R^eUD1m5n1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vaddress_decoder_vlg_vec_tst
+!i10b 1
+!s100 :=_0QgNJLH>JVM]kdALiK0
+I^2oY8]LKeHkk3S4LlTmUA3
+Z19 V_NU0V9JcczOkEzT2f<a7b0
+R3
+R13
+R14
+R15
+L0 1285
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9

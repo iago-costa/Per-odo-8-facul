@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\iagof\Documents\Per-odo-8-facul\MICROELETRONICA-OPTATIVA\TRABALHOS\atividade-vhdl\atividade3\3\simulation\qsim
+vshift_register
+Z1 !s100 4`28_AiBU;aiTf7^LfGOG0
+Z2 I:k9ZJ`_1Z?GQ=nhhB9lN01
+Z3 VokoGekQh7c7nkM<ARg[130
+Z4 dC:\Users\iagof\Documents\Per-odo-8-facul\MICROELETRONICA-OPTATIVA\TRABALHOS\atividade-vhdl\atividade3\3\simulation\qsim
+Z5 w1655173025
+Z6 8data_load.vo
+Z7 Fdata_load.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|data_load.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1655173027.018000
+Z12 !s107 data_load.vo|
+!s101 -O0
+vshift_register_vlg_check_tst
+!i10b 1
+Z13 !s100 GVRQzhGQmTK0R41lOKcIo0
+Z14 IH9WXnSHJgGb]JXZZ1=Y2]3
+Z15 V_Y@f1gl^Y[J<a^d9ODmld0
+R4
+Z16 w1655173023
+Z17 8teste02.vwf.vt
+Z18 Fteste02.vwf.vt
+Z19 L0 125
+R8
+r1
+!s85 0
+31
+Z20 !s108 1655173027.135000
+Z21 !s107 teste02.vwf.vt|
+Z22 !s90 -work|work|teste02.vwf.vt|
+!s101 -O0
+R10
+vshift_register_vlg_sample_tst
+!i10b 1
+Z23 !s100 k3R0?afB]ZLU;0efRIBTP2
+Z24 IMhffRM=DKbF?BSCmaBX]U2
+Z25 VWYG0XXd@6RmkaJclzQjn23
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+vshift_register_vlg_vec_tst
+!i10b 1
+!s100 zeQV>@hL7BI0dMIT@4:hH1
+IBnNTNYcPzZ6OPFC91D@b42
+Z26 VgeP5z@`6SS><oKUko`VCn0
+R4
+R16
+R17
+R18
+Z27 L0 345
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10

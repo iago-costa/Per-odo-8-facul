@@ -1,0 +1,4 @@
+observações: usar o programa PIPEv3.4.0 para abrir as resoluções na pasta prova-final
+
+aluno: iago costa das flores
+disciplina: automação industrial
